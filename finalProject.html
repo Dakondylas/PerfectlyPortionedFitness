@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <script src="projectJS.js" defer></script>
+    <link rel="stylesheet" href="finalProject.css">
+</head>
+<body>
+    <header style="text-align: left;" id="header">
+        <h2>Dillon Kondylas</h2>
+        <h2>WEB-115  2801</h2>
+    </header>
+    <img src="Untitled drawing.png" alt="" style="height: 100px; margin-top: -75px; display: block; z-index: 10; margin-left: 43.5%;" id="mainLogo"> 
+    <br>
+    <h2 style="text-align: center; " id="buildYourMealPlan">Build Your Meal Plan!</h2>
+    <form id="personalForm" style="text-align: center;">
+        <br><br>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" id="email" required>
+        <br><br>
+        <label for="goal">Goal:</label>
+        <br>
+        <textarea name="goal" id="goal"></textarea>
+        <br>
+        <br>
+        <input type="submit" id="personalSubmit">
+        <br><br><br>
+        <div id="clearInfoDiv" style="display: none;">
+            <button id="clearInfo" style="margin-left: -2px;">Clear Info</button>
+            <br><br><br>
+        </div>
+    </form>
+    <form id="form" style="text-align: center; display: none;">
+        <br><br>
+        <label for="Breakfast">Breakfast:</label>
+        <br>
+        <input type="text" id="Breakfast">
+        <br><br>
+        <label for="Snack1">Snack 1:</label>
+        <br>
+        <input type="text" id="Snack1">
+        <br><br>
+        <label for="Lunch">Lunch:</label>
+        <br>
+        <input type="text" id="Lunch">
+        <br><br>
+        <label for="Snack2">Snack 2:</label>
+        <br>
+        <input type="text" id="Snack2">
+        <br><br>
+        <label for="Dinner">Dinner:</label>
+        <br>
+        <input type="text" id="Dinner">
+        <br><br>
+        <input type="submit" id="submit">
+        <br><br><br>
+    </form>
+    <br><br><br>
+    <div id="outputSpace">
+        <br><br><br>
+        <button style="text-align: center; margin-left: 45%;" id="clearPlan">Clear Plan</button>
+        <br>
+        <br>
+        <div id="hiddenInfo" style="margin-left: 30%; display: none;">
+            <br><br>
+           <img src="Untitled drawing.png" alt="" style="height: 100px;"> 
+           <br>
+           <h3 style="margin-left: 40%;">Build Your Meal Plan</h3>
+           <br><br>
+        </div>
+        
+        <table style="text-align: center; margin-left: 15px; margin-right: 15px;" id="table">
+            <tr>
+                <th style="border: 0px;"></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <td><strong>Breakfast:</strong></td>
+                <td id="MondayBreakfast"></td>
+                <td id="TuesdayBreakfast"></td>
+                <td id="WednesdayBreakfast"></td>
+                <td id="ThursdayBreakfast"></td>
+                <td id="FridayBreakfast"></td>
+                <td id="SaturdayBreakfast"></td>
+                <td id="SundayBreakfast"></td>
+            </tr>
+            <tr>
+                <td><strong>Snack 1:</strong></td>
+                <td id="MondaySnack1"></td>
+                <td id="TuesdaySnack1"></td>
+                <td id="WednesdaySnack1"></td>
+                <td id="ThursdaySnack1"></td>
+                <td id="FridaySnack1"></td>
+                <td id="SaturdaySnack1"></td>
+                <td id="SundaySnack1"></td>
+            </tr>
+            <tr>
+                <td><strong>Lunch:</strong></td>
+                <td id="MondayLunch"></td>
+                <td id="TuesdayLunch"></td>
+                <td id="WednesdayLunch"></td>
+                <td id="ThursdayLunch"></td>
+                <td id="FridayLunch"></td>
+                <td id="SaturdayLunch"></td>
+                <td id="SundayLunch"></td>
+            </tr>
+            <tr>
+                <td><strong>Snack 2:</strong></td>
+                <td id="MondaySnack2"></td>
+                <td id="TuesdaySnack2"></td>
+                <td id="WednesdaySnack2"></td>
+                <td id="ThursdaySnack2"></td>
+                <td id="FridaySnack2"></td>
+                <td id="SaturdaySnack2"></td>
+                <td id="SundaySnack2"></td>
+            </tr>
+            <tr>
+                <td><strong>Dinner:</strong></td>
+                <td id="MondayDinner"></td>
+                <td id="TuesdayDinner"></td>
+                <td id="WednesdayDinner"></td>
+                <td id="ThursdayDinner"></td>
+                <td id="FridayDinner"></td>
+                <td id="SaturdayDinner"></td>
+                <td id="SundayDinner"></td>
+            </tr>
+        </table>
+        <br><br><br>
+    </div>
+    <br>
+    <button id="savePDFOrPrint" style="display: none;">Save as PDF or Print🖶</button>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+table, td, th {
+    border: 1px solid black;
+}
+
+td, th {
+    border-radius: 20%;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+form {
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: beige;
+}
+
+input, textarea {
+    outline: 1px solid black;
+}
+
+input[disabled] {
+    outline: 0px solid black;
+}
+
+div {
+    background-color: beige;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+button {
+    margin-left: 46%;
+}
